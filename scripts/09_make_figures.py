@@ -562,7 +562,7 @@ def figure4(results: Path, out: Path) -> None:
 TILE_BG = "#13303b"
 
 
-def draw_logo(ax) -> None:
+def draw_logo(ax, *, outline: str = "none") -> None:
     """Draw the project tile into a square axes: a marked-up page above the name, three diagnosis steps below."""
     fig = ax.figure
     scale = ax.get_position().width * fig.get_figwidth() * 72
@@ -571,7 +571,7 @@ def draw_logo(ax) -> None:
     ax.set_aspect("equal")
     ax.set_axis_off()
     ax.add_patch(FancyBboxPatch((0.03, 0.03), 0.94, 0.94, boxstyle="round,pad=0,rounding_size=0.17",
-                                facecolor=TILE_BG, edgecolor="none"))
+                                facecolor=TILE_BG, edgecolor=outline, linewidth=0.5))
     ax.text(0.14, 0.775, "ZHENJU", fontsize=scale * 0.062, fontweight="bold", color="#c9dbe3", va="center")
     ax.add_patch(mpl.patches.Polygon([(0.70, 0.67), (0.70, 0.88), (0.80, 0.88), (0.87, 0.81), (0.87, 0.67)],
                                      closed=True, facecolor="#2f6fe0", edgecolor="none"))
@@ -594,7 +594,8 @@ def figure_logo(out: Path) -> None:
     print("saved logo")
 
 
-def figure_hero(results: Path, out: Path, with_logo: bool, name: str, language: str = "zh") -> None:
+def figure_hero(results: Path, out: Path, with_logo: bool, name: str, language: str = "zh", *,
+                dark: bool = False) -> None:
     """One real test sentence before and after tuning, above the whole-test-set change."""
     summary = load_csv(results / "summary.csv")
     zero, tuned = summary["pretrained_zero"], summary["sft_s42"]
@@ -606,7 +607,8 @@ def figure_hero(results: Path, out: Path, with_logo: bool, name: str, language: 
     ax.set_axis_off()
     left = 0.02
     if with_logo:
-        draw_logo(fig.add_axes([0.0, 0.03 / height, (height - 0.06) / width, (height - 0.06) / height]))
+        logo = fig.add_axes([0.0, 0.03 / height, (height - 0.06) / width, (height - 0.06) / height])
+        draw_logo(logo, outline="#365865" if dark else "none")
         left = height + 0.08
 
     if language == "en":
@@ -622,31 +624,40 @@ def figure_hero(results: Path, out: Path, with_logo: bool, name: str, language: 
         after = ("微调后", "判成“成分残缺”；删去“从”“中”：", "这篇文章，给了我很大的启发和鼓励。")
         metric_labels = ("判断准确率", "错误归类 F1", "改正得分 F0.5")
 
-    ax.text(left, 1.39, heading, fontsize=8.8, fontweight="bold", color=INK, va="center")
-    ax.text(left, 1.195, source, fontsize=6.8, color=INK, va="center")
+    if dark:
+        ink, muted, accent = "#e6edf3", "#abb8c7", "#7bbaff"
+        before_palette = ("#1b2530", "#374554", "#ff988f")
+        after_palette = ("#182c3e", "#32536e", "#75dfbb")
+    else:
+        ink, muted, accent = INK, MUTED, SFT_C
+        before_palette = ("#f3f4f6", "none", "#b4372c")
+        after_palette = ("#e9f0f9", "none", "#14704f")
+
+    ax.text(left, 1.39, heading, fontsize=8.8, fontweight="bold", color=ink, va="center")
+    ax.text(left, 1.195, source, fontsize=6.8, color=ink, va="center")
 
     gap = 0.1
     card_w = (width - left - 0.02 - gap) / 2
     cards = [
-        (left, "#f3f4f6", "×", "#b4372c", before),
-        (left + card_w + gap, "#e9f0f9", "√", "#14704f", after),
+        (left, "×", before_palette, before),
+        (left + card_w + gap, "√", after_palette, after),
     ]
-    for x, fill, mark, mark_color, (title, line1, line2) in cards:
+    for x, mark, (fill, outline, mark_color), (title, line1, line2) in cards:
         ax.add_patch(FancyBboxPatch((x, 0.47), card_w, 0.61, boxstyle="round,pad=0,rounding_size=0.05",
-                                    facecolor=fill, edgecolor="none"))
+                                    facecolor=fill, edgecolor=outline, linewidth=0.5))
         ax.text(x + 0.08, 0.955, mark, fontsize=8.2, fontweight="bold", color=mark_color, va="center")
-        ax.text(x + 0.22, 0.955, title, fontsize=6.8, fontweight="bold", color=INK, va="center")
-        ax.text(x + 0.08, 0.785, line1, fontsize=6.3, color=INK, va="center")
-        ax.text(x + 0.08, 0.61, line2, fontsize=6.3, color=INK, va="center")
+        ax.text(x + 0.22, 0.955, title, fontsize=6.8, fontweight="bold", color=ink, va="center")
+        ax.text(x + 0.08, 0.785, line1, fontsize=6.3, color=ink, va="center")
+        ax.text(x + 0.08, 0.61, line2, fontsize=6.3, color=ink, va="center")
 
     metrics = zip(metric_labels, ("detection", "type_macro_f1", "edit_f05"))
     kpi_w = (width - left - 0.02) / 3
     for index, (label, key) in enumerate(metrics):
         x = left + index * kpi_w
-        ax.text(x + 0.02, 0.33, label, fontsize=6.1, color=MUTED, va="center")
+        ax.text(x + 0.02, 0.33, label, fontsize=6.1, color=muted, va="center")
         ax.text(x + 0.02, 0.13, f"{zero[key]:.3f} → {tuned[key]:.3f}", fontsize=9.2, fontweight="bold",
-                color=SFT_C, va="center")
-    fig.savefig(out / f"{name}.png", dpi=400, facecolor="white")
+                color=accent, va="center")
+    fig.savefig(out / f"{name}.png", dpi=400, transparent=dark, facecolor="none" if dark else "white")
     plt.close(fig)
     print("saved", name)
 
@@ -741,7 +752,9 @@ def main() -> None:
     if "short" in wanted:
         figure_logo(args.out)
         figure_hero(args.results, args.out, with_logo=True, name="hero")
+        figure_hero(args.results, args.out, with_logo=True, name="hero-dark", dark=True)
         figure_hero(args.results, args.out, with_logo=True, name="hero_en", language="en")
+        figure_hero(args.results, args.out, with_logo=True, name="hero_en-dark", language="en", dark=True)
         figure_hero(args.results, args.out, with_logo=False, name="hero_example")
         figure_scores(args.results, args.out)
         figure_alignment(args.results, args.out)

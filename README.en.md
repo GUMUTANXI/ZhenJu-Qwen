@@ -16,7 +16,8 @@
 </p>
 
 <p align="center">
-  <img src="figures/hero_en.png" alt="ZhenJu banner showing a Chinese sentence before and after fine-tuning, with changes in detection accuracy, error-type F1, and edit F0.5.">
+  <a href="figures/hero_en.png#gh-light-mode-only"><img src="figures/hero_en.png" alt="ZhenJu banner showing a Chinese sentence before and after fine-tuning, with changes in detection accuracy, error-type F1, and edit F0.5."></a>
+  <a href="figures/hero_en-dark.png#gh-dark-mode-only"><img src="figures/hero_en-dark.png" alt="ZhenJu banner showing a Chinese sentence before and after fine-tuning, with changes in detection accuracy, error-type F1, and edit F0.5."></a>
 </p>
 
 ZhenJu uses LoRA and FCGEC to adapt Qwen3-1.7B for Chinese grammatical error diagnosis. Each response gives a verdict, an error type, an edit explanation, and a corrected sentence on four lines. Compare the base and tuned models in Gradio, or filter test-set predictions by error type in the offline explorer.

@@ -16,7 +16,8 @@
 </p>
 
 <p align="center">
-  <img src="figures/hero.png" alt="诊句头图。同一句话在微调前后的输出对比，以及检测准确率、类型 F1 和改正 F0.5 的变化。">
+  <a href="figures/hero.png#gh-light-mode-only"><img src="figures/hero.png" alt="诊句头图。同一句话在微调前后的输出对比，以及检测准确率、类型 F1 和改正 F0.5 的变化。"></a>
+  <a href="figures/hero-dark.png#gh-dark-mode-only"><img src="figures/hero-dark.png" alt="诊句头图。同一句话在微调前后的输出对比，以及检测准确率、类型 F1 和改正 F0.5 的变化。"></a>
 </p>
 
 诊句在 FCGEC 上用 LoRA 微调 Qwen3-1.7B，让模型按「判断 → 类型 → 修改 → 改正」四行输出。你可以在 Gradio 界面并排比较基础模型和微调模型，也可以在逐句评测浏览器中查看预测、筛选语病类型和核对改正结果。
