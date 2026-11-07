@@ -1,0 +1,34 @@
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.gradio/
+
+# Weights too large for a normal GitHub repository: publish these on HuggingFace or a Release
+*.gguf
+models/
+runs/
+merged/
+*.bin
+*.pt
+*.pth
+
+# The adapter in adapters/ is small and is meant to be versioned
+!adapters/**/adapter_model.safetensors
+
+# Local data; scripts/download_data.py fetches it again
+/data/
+/logs/
+
+# Layout QA output from the figure script
+figures/*.alignment.json
+figures/*.alignment.svg
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

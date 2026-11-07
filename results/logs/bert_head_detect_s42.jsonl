@@ -1,0 +1,6 @@
+{"event": "dev", "epoch": 0, "unfrozen": 0, "train_loss": 0.6539305427696523, "select": 0.6206666666666667, "elapsed": 6.674974679946899}
+{"event": "dev", "epoch": 1, "unfrozen": 0, "train_loss": 0.6375760132825925, "select": 0.622, "elapsed": 13.479103803634644}
+{"event": "dev", "epoch": 2, "unfrozen": 0, "train_loss": 0.6292000905925713, "select": 0.6326666666666667, "elapsed": 20.19647216796875}
+{"event": "dev", "epoch": 3, "unfrozen": 0, "train_loss": 0.6207582860924629, "select": 0.6386666666666667, "elapsed": 26.805814266204834}
+{"event": "dev", "epoch": 4, "unfrozen": 0, "train_loss": 0.6158387375979238, "select": 0.6406666666666667, "elapsed": 33.42961263656616}
+{"event": "summary", "accuracy": 0.55005005005005, "precision": 0.5740604274134119, "recall": 0.7081818181818181, "f1": 0.6341066341066341, "macro_f1": 0.5249805425244022, "select": 0.55005005005005, "arm": "bert_head_detect_s42", "task": "detect", "strategy": "head", "seed": 42, "best": {"select": 0.6406666666666667, "epoch": 4}, "seconds": 33.83425545692444, "peak_gpu_gb": 0.7938385009765625, "steps": 4005, "trainable_params_last_epoch": 155738, "total_params": 102423386}

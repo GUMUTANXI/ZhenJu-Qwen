@@ -1,0 +1,16 @@
+ZhenJu
+Licensed under the Apache License, Version 2.0.
+
+This project uses or derives from the following works:
+
+FCGEC corpus (Apache License 2.0)
+  https://github.com/xlxwalex/FCGEC
+  results/predictions/ and docs/index.html reproduce sentences from this corpus.
+
+Qwen3-1.7B (Apache License 2.0)
+  https://huggingface.co/Qwen/Qwen3-1.7B
+  adapters/zhenju-sft/ is a LoRA adapter trained on these weights. The base weights are not included.
+
+bert-base-chinese
+  https://huggingface.co/google-bert/bert-base-chinese
+  Used as a baseline. The weights are not included.

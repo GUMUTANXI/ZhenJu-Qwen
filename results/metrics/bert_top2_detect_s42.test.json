@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.6001001001001001,
+  "precision": 0.6384544618215271,
+  "recall": 0.6309090909090909,
+  "f1": 0.6346593507087335,
+  "macro_f1": 0.5964894321260639,
+  "select": 0.6001001001001001,
+  "arm": "bert_top2_detect_s42",
+  "task": "detect",
+  "strategy": "top2",
+  "seed": 42,
+  "best": {
+    "select": 0.6653333333333333,
+    "epoch": 4
+  },
+  "seconds": 42.666645526885986,
+  "peak_gpu_gb": 0.9325404167175293,
+  "steps": 4005,
+  "trainable_params_last_epoch": 14331482,
+  "total_params": 102423386
+}

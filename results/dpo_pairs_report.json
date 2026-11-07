@@ -1,0 +1,12 @@
+{
+  "pool": 2000,
+  "pairs": 1866,
+  "sentences_with_pair": 1244,
+  "greedy_fully_correct": 0.463,
+  "kinds": {
+    "wrong_type": 605,
+    "false_alarm": 472,
+    "bad_correction": 409,
+    "missed_error": 380
+  }
+}

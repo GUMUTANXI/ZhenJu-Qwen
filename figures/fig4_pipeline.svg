@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="436.32pt" height="96.48pt" viewBox="0 0 436.32 96.48" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T20:58:45.523525</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 96.48 
+L 436.32 96.48 
+L 436.32 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 8.208 91.92384 
+L 78.192 91.92384 
+Q 83.376 91.92384 83.376 90.81792 
+L 83.376 5.66208 
+Q 83.376 4.55616 78.192 4.55616 
+L 8.208 4.55616 
+Q 3.024 4.55616 3.024 5.66208 
+L 3.024 90.81792 
+Q 3.024 91.92384 8.208 91.92384 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #ffffff; stroke: #5d6876; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 95.688 91.92384 
+L 165.672 91.92384 
+Q 170.856 91.92384 170.856 90.81792 
+L 170.856 5.66208 
+Q 170.856 4.55616 165.672 4.55616 
+L 95.688 4.55616 
+Q 90.504 4.55616 90.504 5.66208 
+L 90.504 90.81792 
+Q 90.504 91.92384 95.688 91.92384 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #ffffff; stroke: #2a78d6; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 183.168 91.92384 
+L 253.152 91.92384 
+Q 258.336 91.92384 258.336 90.81792 
+L 258.336 5.66208 
+Q 258.336 4.55616 253.152 4.55616 
+L 183.168 4.55616 
+Q 177.984 4.55616 177.984 5.66208 
+L 177.984 90.81792 
+Q 177.984 91.92384 183.168 91.92384 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #ffffff; stroke: #eb6834; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 270.648 91.92384 
+L 340.632 91.92384 
+Q 345.816 91.92384 345.816 90.81792 
+L 345.816 5.66208 
+Q 345.816 4.55616 340.632 4.55616 
+L 270.648 4.55616 
+Q 265.464 4.55616 265.464 5.66208 
+L 265.464 90.81792 
+Q 265.464 91.92384 270.648 91.92384 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #ffffff; stroke: #3f4650; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 358.128 91.92384 
+L 428.112 91.92384 
+Q 433.296 91.92384 433.296 90.81792 
+L 433.296 5.66208 
+Q 433.296 4.55616 428.112 4.55616 
+L 358.128 4.55616 
+Q 352.944 4.55616 352.944 5.66208 
+L 352.944 90.81792 
+Q 352.944 91.92384 358.128 91.92384 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #ffffff; stroke: #1baf7a; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 82.512 48.24 
+Q 86.94 48.24 90.361769 48.24 
+" clip-path="url(#pccb7ffdfa6)" style="fill: none; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 87.561769 46.84 
+L 90.361769 48.24 
+L 87.561769 49.64 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #5d6876; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 169.992 48.24 
+Q 174.42 48.24 177.841769 48.24 
+" clip-path="url(#pccb7ffdfa6)" style="fill: none; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 175.041769 46.84 
+L 177.841769 48.24 
+L 175.041769 49.64 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #5d6876; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 257.472 48.24 
+Q 261.9 48.24 265.321769 48.24 
+" clip-path="url(#pccb7ffdfa6)" style="fill: none; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 262.521769 46.84 
+L 265.321769 48.24 
+L 262.521769 49.64 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #5d6876; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 344.952 48.24 
+Q 349.38 48.24 352.801769 48.24 
+" clip-path="url(#pccb7ffdfa6)" style="fill: none; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 350.001769 46.84 
+L 352.801769 48.24 
+L 350.001769 49.64 
+z
+" clip-path="url(#pccb7ffdfa6)" style="fill: #5d6876; stroke: #5d6876; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17202b" x="9.936" y="15.541425" transform="rotate(-0 9.936 15.541425)">① 语料与审计</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(9.936 30.501402)">FCGEC 中文病句语料</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(9.936 38.788828)">训练 25,603 句</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(9.936 47.077636)">开发 1,500 句</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(9.936 55.375203)">测试 1,998 句</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(9.936 63.668621)">同源剔除 2,232 句</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17202b" x="97.416" y="15.548175" transform="rotate(-0 97.416 15.548175)">② 指令微调</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(97.416 30.406449)">Qwen3-1.7B + LoRA</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(97.416 38.773156)">可训练 1.0% 参数</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(97.416 47.070722)">判断/类型/修改/改正</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(97.416 55.394101)">四行结构化输出</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(97.416 63.674152)">6,657 步 · 27 分钟</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17202b" x="184.896" y="15.548175" transform="rotate(-0 184.896 15.548175)">③ 对齐微调</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(184.896 30.475129)">DPO：模型真实错误</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(184.896 38.785601)">挖出 1,866 对偏好</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(184.896 47.087777)">PPO：在线采样 +</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(184.896 55.400093)">量规 / 相似度奖励</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17202b" x="272.376" y="15.53355" transform="rotate(-0 272.376 15.53355)">④ 对比评测</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(272.376 30.487113)">预训练两组 + BERT</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(272.376 38.773156)">检测 / 类型 / 改正</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(272.376 47.085011)">自助法 95% CI</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(272.376 55.348007)">检测 0.721</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #17202b" x="359.856" y="15.554925" transform="rotate(-0 359.856 15.554925)">⑤ 应用</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(359.856 30.469597)">LoRA 适配器</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(359.856 38.779148)">Gradio 对比界面</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(359.856 47.082246)">结果浏览网页</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(359.856 55.391336)">语文批改与</text>
+    <text style="font-size: 5.9px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5d6876" transform="translate(359.856 63.665855)">二语写作反馈</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pccb7ffdfa6">
+   <rect x="2.16" y="2.16" width="432" height="92.16"/>
+  </clipPath>
+ </defs>
+</svg>

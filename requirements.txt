@@ -1,0 +1,15 @@
+# Install PyTorch separately so the CUDA build matches your driver, for example:
+#   pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cu132
+transformers==5.22.1
+peft==0.21.2
+accelerate==1.15.0
+safetensors
+huggingface_hub
+numpy
+pandas
+scipy
+scikit-learn==1.9.1
+rapidfuzz==3.14.6
+matplotlib==3.11.2
+umap-learn
+gradio==6.31.0

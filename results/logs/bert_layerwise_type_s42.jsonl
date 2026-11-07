@@ -1,0 +1,6 @@
+{"event": "dev", "epoch": 0, "unfrozen": 0, "train_loss": 0.4253326581829938, "select": 0.2444656095717446, "elapsed": 4.04741096496582}
+{"event": "dev", "epoch": 1, "unfrozen": 2, "train_loss": 0.3737202216881887, "select": 0.2902100082938311, "elapsed": 8.613113164901733}
+{"event": "dev", "epoch": 2, "unfrozen": 4, "train_loss": 0.34580081687449304, "select": 0.37435486297667975, "elapsed": 14.427594900131226}
+{"event": "dev", "epoch": 3, "unfrozen": 8, "train_loss": 0.31348550437221395, "select": 0.41345564769179516, "elapsed": 22.36601948738098}
+{"event": "dev", "epoch": 4, "unfrozen": 12, "train_loss": 0.29521505890755534, "select": 0.42433526486472095, "elapsed": 32.86142301559448}
+{"event": "summary", "macro_f1": 0.438446186154604, "micro_f1": 0.5140062249888839, "subset_accuracy": 0.49818181818181817, "per_class_f1": {"IWO": 0.5235602094240838, "IWC": 0.49523809523809526, "CM": 0.5970149253731343, "CR": 0.18947368421052632, "SC": 0.6057692307692307, "ILL": 0.44594594594594594, "AM": 0.21212121212121213}, "select": 0.438446186154604, "arm": "bert_layerwise_type_s42", "task": "type", "strategy": "layerwise", "seed": 42, "best": {"select": 0.42433526486472095, "epoch": 4}, "seconds": 33.15111446380615, "peak_gpu_gb": 2.89640474319458, "steps": 2155, "trainable_params_last_epoch": 102424391, "total_params": 102424391}

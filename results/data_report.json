@@ -1,0 +1,89 @@
+{
+  "source": {
+    "train_filtered": {
+      "total": 35354,
+      "kept": 35337,
+      "dropped_no_reference": 16,
+      "dropped_bad_op": 1,
+      "flag0_with_type": 0,
+      "multi_reference": 6807
+    },
+    "official_valid_as_test": {
+      "total": 2000,
+      "kept": 1998,
+      "dropped_no_reference": 1,
+      "dropped_bad_op": 1,
+      "flag0_with_type": 0,
+      "multi_reference": 350
+    }
+  },
+  "homology_audit": {
+    "train_items_sharing_8gram_with_test": 2232,
+    "removed_from_training": 2232,
+    "groups": 24061,
+    "largest_group": 101
+  },
+  "splits": {
+    "main": {
+      "n": 25605,
+      "faulty": 13792,
+      "clean": 11813,
+      "types": {
+        "CM": 2871,
+        "IWC": 2773,
+        "ILL": 2556,
+        "SC": 2266,
+        "IWO": 2011,
+        "CR": 1161,
+        "AM": 676
+      },
+      "mean_chars": 52.4
+    },
+    "dev": {
+      "n": 1500,
+      "faulty": 813,
+      "clean": 687,
+      "types": {
+        "CM": 160,
+        "IWC": 157,
+        "ILL": 135,
+        "IWO": 126,
+        "SC": 121,
+        "CR": 88,
+        "AM": 48
+      },
+      "mean_chars": 52.0
+    },
+    "pool": {
+      "n": 6000,
+      "faulty": 3141,
+      "clean": 2859,
+      "types": {
+        "CM": 636,
+        "IWC": 623,
+        "ILL": 550,
+        "SC": 534,
+        "IWO": 460,
+        "CR": 259,
+        "AM": 209
+      },
+      "mean_chars": 52.4
+    },
+    "test": {
+      "n": 1998,
+      "faulty": 1100,
+      "clean": 898,
+      "types": {
+        "IWC": 249,
+        "CM": 239,
+        "SC": 224,
+        "IWO": 193,
+        "ILL": 130,
+        "CR": 69,
+        "AM": 43
+      },
+      "mean_chars": 55.8
+    }
+  },
+  "seed": 20261106
+}
